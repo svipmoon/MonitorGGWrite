@@ -16,3 +16,6 @@ target_compile_options(HookWrite PRIVATE
 target_link_options(HookWrite PRIVATE
     -static-libstdc++
 )
+
+# Android log library (for __android_log_print)
+target_link_libraries(HookWrite PRIVATE log)
